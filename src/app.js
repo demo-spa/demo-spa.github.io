@@ -12,15 +12,15 @@ import { getUserData } from './util.js';
 import { showRegsiter } from './views/register.js';
 import { logout } from './data/auth.js';
 
-const subUrl = '/spa-modular-demo';
+//const subUrl = '/spa-modular-demo';
 //const subUrl = '';
 const navTemplate = (user) => html`
-<a href="${subUrl}/">Home</a>
-<a href="${subUrl}/recipes">Catalog</a>
-${user ? html`<a href="${subUrl}/create">Create</a>` : nothing}
-<a href="${subUrl}/about">About</a>
-${user ? html`<span>Welcome, ${user.username}</span><a href="${subUrl}/logout">Logout</a>` : html`<a href="${subUrl}/login">Login</a>
-<a href="${subUrl}/register">Register</a>`}
+<a href="/">Home</a>
+<a href="/recipes">Catalog</a>
+${user ? html`<a href="/create">Create</a>` : nothing}
+<a href="/about">About</a>
+${user ? html`<span>Welcome, ${user.username}</span><a href="/logout">Logout</a>` : html`<a href="/login">Login</a>
+<a href="/register">Register</a>`}
 `;
 
 function onLogout(ctx) {
@@ -64,7 +64,7 @@ function session(ctx, next) {
 page(session);
 page(decorateContext);
 page(parseQuery);
-page.base('/spa-modular-demo');
+//page.base('/spa-modular-demo');
 page('/index.html', '/');
 page('/', showHome);
 page('/recipes', showCatalog);
