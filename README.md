@@ -6,7 +6,7 @@
 ```
 remember!  
 
-Agent Pesho is allways watching you!!
+Agent Pesho is always watching you!!
 ```
 <a href="https://www.google.bg">
 <img src="https://github.com/demo-spa/demo-spa.github.io/blob/main/assets/hipawcat.gif?raw=true" alt="drawing" width="100"/>
