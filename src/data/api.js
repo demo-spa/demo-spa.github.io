@@ -1,7 +1,7 @@
 import { clearUserData, getUserData } from '../util.js';
 
-//const host = 'http://localhost:3030';
-const host = 'https://softuni-server-e92b4566d45a.herokuapp.com';
+const host = 'http://localhost:3030';
+//const host = 'https://softuni-server-e92b4566d45a.herokuapp.com';
 
 
 async function request(method, url, data) {
